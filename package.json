@@ -2,7 +2,7 @@
   "name": "outtake",
   "version": "0.1.0",
   "description": "Inventories a Google Takeout archive — contents, sizes, formats and extraction plans — with per-product next-step tooling suggestions, offline and dependency-free.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
