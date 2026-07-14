@@ -1,0 +1,54 @@
+{
+  "name": "outtake",
+  "version": "0.1.0",
+  "description": "Inventories a Google Takeout archive — contents, sizes, formats and extraction plans — with per-product next-step tooling suggestions, offline and dependency-free.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "outtake": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "google-takeout",
+    "takeout",
+    "degoogle",
+    "data-portability",
+    "archive",
+    "inventory",
+    "zip",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/outtake.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/outtake#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/outtake/issues"
+  }
+}
